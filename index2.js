@@ -27,4 +27,13 @@
 
 
 
+function DNAtoRNA(dna) {
+    // create a function which returns an RNA sequence from the given DNA sequence
+    let arr = dna.split('');
+    for( let i = 0; i < arr.length; i++){
+        if(arr[i] == 'T') arr[i] = "U";
+    }
+    return arr.join("");
 
+  }
+console.log(typeof(DNAtoRNA("TACOTA")))

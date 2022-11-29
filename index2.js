@@ -27,13 +27,31 @@
 
 
 
-function DNAtoRNA(dna) {
-    // create a function which returns an RNA sequence from the given DNA sequence
-    let arr = dna.split('');
-    for( let i = 0; i < arr.length; i++){
-        if(arr[i] == 'T') arr[i] = "U";
-    }
-    return arr.join("");
+// function DNAtoRNA(dna) {
+//     // create a function which returns an RNA sequence from the given DNA sequence
+//     let arr = dna.split('');
+//     for( let i = 0; i < arr.length; i++){
+//         if(arr[i] == 'T') arr[i] = "U";
+//     }
+//     return arr.join("");
 
+//   }
+// console.log(typeof(DNAtoRNA("TACOTA")))
+
+// function countdown(n){
+//   if(n < 1){
+//     return [];
+//   } else {
+//     const countArray = countdown(n - 1);
+//     countArray.unshift(n);
+//     return countArray;
+//   }
+// }
+// console.log(countdown(5))
+
+function noSpace(x){
+  let y = x.split(' ');
+  return y.join('');
   }
-console.log(typeof(DNAtoRNA("TACOTA")))
+
+  console.log(noSpace('sd sdd sf'))

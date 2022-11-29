@@ -56,9 +56,26 @@
 
 //   console.log(noSpace('sd sdd sf'))
 
-function hero(bullets, dragons){
-  //Get Coding!
-   let war =  (bullets >= (dragons * 2))  ? true : false;
-   return war;
-  }
-  console.log(hero(100,50))
+// function hero(bullets, dragons){
+//   //Get Coding!
+// let war =  (bullets >= (dragons * 2))  ? true : false;
+//    return war;
+//   }
+//   console.log(hero(100,50))
+
+// let getMsg = (a) =>{
+//     let total = ( a == 1) ? 'Player 1 won!' : (a == 2) ? 'Player 2 won!' : 'Draw!';
+//     return total;
+//     }
+    
+    
+    
+//     const rps = (p1, p2) => {
+//       if (p1 == 'paper' && p2 == 'rock'){ 
+//         return getMsg(1)}else if(
+//         p1 == 'scissors' && p2 =='paper'){
+//         return getMsg(1)
+//         }
+      
+//     };
+//     console.log(rps('scissors','paper'))

@@ -49,9 +49,16 @@
 // }
 // console.log(countdown(5))
 
-function noSpace(x){
-  let y = x.split(' ');
-  return y.join('');
-  }
+// function noSpace(x){
+//   let y = x.split(' ');
+//   return y.join('');
+//   }
 
-  console.log(noSpace('sd sdd sf'))
+//   console.log(noSpace('sd sdd sf'))
+
+function hero(bullets, dragons){
+  //Get Coding!
+   let war =  (bullets >= (dragons * 2))  ? true : false;
+   return war;
+  }
+  console.log(hero(100,50))

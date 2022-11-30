@@ -58,7 +58,45 @@
 
 
 function updateLight(current) {
-  
-    //your code here!
+  let arr = ["green", "red", "yellow"];
+ return (current == 'green') ? "yellow" : (current == 'yellow') ? "red" : (current == 'red') ? "green" : "yellow"
   
   }
+
+  console.log(updateLight('green'))
+
+
+
+
+//   100000/ 3600
+function cockroachSpeed(s) {
+  
+let cm = parseInt((s * 100000) / 3600)
+return cm;
+
+  }
+
+  console.log(cockroachSpeed(1.08))
+
+
+
+
+  function rowSumOddNumbers(n) {
+    let arr = Array(n).fill().map((el, i) => i+1);
+    let sum = 0;
+    if( n == 0){return 0}
+    else{for (let i= 0; i < arr.length; i++){
+        sum += i;
+    }
+    return sum ;}
+    
+    
+    
+
+}
+
+
+console.log(rowSumOddNumbers(42))
+
+
+

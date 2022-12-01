@@ -142,3 +142,56 @@ return bool == true ? "Yes" : "No"
 }
 
 console.log(boolToWord(false));
+
+
+function lovefunc(flower1, flower2){
+  // moment of truth
+  let flowtrue = flower1 % 2;
+  let flowfalse = flower2 % 2;
+  let total = flowtrue != flowfalse ? true : false;
+  return total
+}
+
+console.log(lovefunc(1,4))
+
+
+
+
+/// НЕ РЕШЕНО!!! array.filter ( Нужно другое тело функции)
+
+// function sumArray(array) {
+// if (array == 0 || array == null || array ==[]){
+//   return 0
+// } else{
+
+//   let min = Math.min.apply(null, array);
+//   let max = Math.max.apply(null, array);
+// let arr = array.filter((el)=> el )
+// let newarr = 0
+// for(i=0; i< arr.length; i++){
+// newarr += arr[i]
+// }
+// return newarr
+// }
+//   }
+
+
+//   console.log(sumArray([ 0, 1, 6, 10, 10 ]))
+
+
+
+  function findAverage(array) {
+    // your code here
+
+    if (array == 0 || array == null || array == []) {
+      return 0;
+    } else {
+      let sum = 0;
+
+      for (let i = 0; i < array.length; i++) {
+        sum += array[i];
+      }
+      return sum / array.length;
+    }
+  }
+console.log(findAverage([1,2,3,4]))

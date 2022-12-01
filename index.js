@@ -81,22 +81,25 @@
 
 
 
-//   function rowSumOddNumbers(n) {
-//     let arr = Array(n).fill().map((el, i) => i+1);
-//     let sum = 0;
-//     if( n == 0){return 0}
-//     else{for (let i= 0; i < arr.length; i++){
-//         sum += i;
-//     }
-//     return sum ;}
+  function rowSumOddNumbers(n) {
+    let arr = Array(n).fill().map((el, i) => i+1);
+    let sum = 0;
+
+    let newarr = new Array()
+    if( n == 0){return 0}
+    else{for (let i= 1; i <= arr.length; i++){
+        sum += i;
+        newarr.push(i)
+    }
+    return newarr ;}
     
     
     
 
-// }
+}
 
 
-// console.log(rowSumOddNumbers(42))
+console.log(rowSumOddNumbers(10))
 
 
 
@@ -145,7 +148,7 @@
 
 
 
-  
+
   // function abbrevName(name){
 
 //     let socr = name.split(' ')

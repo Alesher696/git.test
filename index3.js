@@ -55,3 +55,40 @@ return arr;
 }
 
 console.log(humanYearsCatYearsDogYears(3))
+
+
+
+
+
+
+function counter(a) {
+  let arr = Array(n)
+    .fill()
+    .map((el, i) => i + 1);
+
+  let sum = 0;
+
+  let newarr = new Array();
+
+  if (n == 0) {
+    return 0;
+  } else {
+    for (let i = 1; i <= arr.length; i++) {
+      sum += i;
+      newarr.push(i);
+    }
+
+  let total = 0;
+
+  for( i of newarr){
+    if( n % i == 0){
+      total += 1
+    }
+  }
+
+
+    return total;
+  }
+}
+console.log(counter(4));
+

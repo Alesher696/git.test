@@ -126,18 +126,16 @@
 
 
   
-  function descendingOrder(n){
+  function descendingOrder(n) {
+    let newarr = ("" + n).split("").map(Number);
+    newarr.sort(function (a, b) {
+      return b - a;
+    });
 
-    let newarr = (('' + n).split('')).map(Number)
-    newarr.sort(function(a, b) {
-       return b - a;})
+    let arr2 = parseInt(newarr.join(""));
 
-    let arr2 = parseInt(newarr.join(''))
-    
- 
-    return arr2
-
-    }
+    return arr2;
+  }
    
  
 

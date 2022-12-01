@@ -83,15 +83,18 @@
 
   function rowSumOddNumbers(n) {
     let arr = Array(n).fill().map((el, i) => i+1);
-    let sum = 0;
+    let summa = arr.reduce(function(sum, elem){
+      return sum + elem;
+    });
 
-    let newarr = new Array()
-    if( n == 0){return 0}
-    else{for (let i= 1; i <= arr.length; i++){
-        sum += i;
-        newarr.push(i)
-    }
-    return newarr ;}
+    return summa
+    // let newarr = new Array()
+    // if( n == 0){return 0}
+    // else{for (let i= 1; i <= arr.length; i++){
+    //     sum += i;
+    //     newarr.push(i)
+    // }
+    //  ;}
     
     
     
@@ -99,7 +102,7 @@
 }
 
 
-console.log(rowSumOddNumbers(10))
+console.log(rowSumOddNumbers(2))
 
 
 
@@ -201,3 +204,45 @@ console.log(rowSumOddNumbers(10))
     
 //     reverseString("hello");
 //     console.log(reverseString("hello"))
+
+
+function past(h, m, s){
+  //#Happy Coding! ^_^
+  return s * 1000 + m * 60000 + h * 3600000;
+
+}
+
+console.log(past(1,0,1))
+
+
+function enough(cap, on, wait) {
+  // your code here
+let a = on + wait;
+let b = cap - a;
+if (b >= 0){
+  return 0
+} else return b * (-1)
+
+}
+console.log(enough(10,5,10))
+
+
+function feast(beast, dish) {
+  //your function here
+  if (
+    beast[0] == dish[0] &&
+    beast[beast.length - 1] == dish[dish.length - 1]
+  ) {
+    return true;
+  } else return false;
+}
+
+let str = '123456789';
+
+let arr1 = str.split('');
+let arr2 = arr1.reverse();
+let result = arr2.join('');
+
+console.log(result);
+
+

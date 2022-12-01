@@ -62,7 +62,7 @@ console.log(humanYearsCatYearsDogYears(3))
 
 
 function counter(a) {
-  let arr = Array(n)
+  let arr = Array(a)
     .fill()
     .map((el, i) => i + 1);
 
@@ -70,7 +70,7 @@ function counter(a) {
 
   let newarr = new Array();
 
-  if (n == 0) {
+  if (a == 0) {
     return 0;
   } else {
     for (let i = 1; i <= arr.length; i++) {
@@ -81,7 +81,7 @@ function counter(a) {
   let total = 0;
 
   for( i of newarr){
-    if( n % i == 0){
+    if( a % i == 0){
       total += 1
     }
   }
@@ -92,4 +92,53 @@ function counter(a) {
 }
 console.log(counter(4));
 
-dfdgfg
+function squareSum(numbers){
+  let arr = 0;
+for( let i = 0; i < numbers.length; i++){
+   arr += numbers[i] * 2;
+}
+  return arr
+}
+console.log(squareSum([0, 3, 4, 5]))
+
+
+
+
+function reverseWords(str) {
+  // Go for it
+ let a = str.split(' ')
+let arr = [];
+let newarr = new Array();
+
+for (let i = 0; i < a.length; i++){
+    arr = a[i].split('');
+    
+    
+
+ 
+
+}
+
+}
+
+
+// console.log(reverseWords("Hello brother and sisters"))
+
+
+
+
+
+let a = "This is an example!";
+let b = a.split(" ");
+let c = b.map(element => element.split('').reverse().join(""));
+let d = c.join(" ")
+
+
+console.log(d)
+
+
+function boolToWord(bool) {
+return bool == true ? "Yes" : "No"
+}
+
+console.log(boolToWord(false));

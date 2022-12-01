@@ -126,19 +126,75 @@
 
 
   
-  function descendingOrder(n) {
-    let newarr = ("" + n).split("").map(Number);
-    newarr.sort(function (a, b) {
-      return b - a;
-    });
+  // function descendingOrder(n) {
+  //   let newarr = ("" + n).split("").map(Number);
+  //   newarr.sort(function (a, b) {
+  //     return b - a;
+  //   });
 
-    let arr2 = parseInt(newarr.join(""));
+  //   let arr2 = parseInt(newarr.join(""));
 
-    return arr2;
-  }
+  //   return arr2;
+  // }
    
  
 
 
-  console.log(descendingOrder(123456))
-  console.log(typeof(descendingOrder(12345)))
+  // console.log(descendingOrder(123456))
+  // console.log(typeof(descendingOrder(12345)))
+
+
+
+  
+  // function abbrevName(name){
+
+//     let socr = name.split(' ')
+// let a = "";
+// let b = "";
+
+// a += socr[0];
+// b += socr[1];
+
+// // a.substring(0,1);
+// // b.substring(0,1);
+
+
+
+
+
+// return `${(a.substring(0,1)).toUpperCase()}.${(b.substring(0,1)).toUpperCase()}`
+// }
+
+// console.log(abbrevName('p eskobaro'))
+
+
+
+// function litres(time) {
+// // за 1 час расход 0.5 литра
+// let total = Math.floor(time * 0.5);
+
+
+//     return total
+//   }
+//   console.log(litres(12.3))
+
+
+//   function otherAngle(a, b) {
+// let c =  180 - (a + b);
+
+
+//     return c
+//   }
+//   console.log(otherAngle(60,50))
+
+
+//   function reverseString(str) {
+//     let newstr = str.split("")
+//      let newstr2 = newstr.reverse()
+//     let newstr3 = newstr2.join('')
+//     return newstr3
+      
+//     }
+    
+//     reverseString("hello");
+//     console.log(reverseString("hello"))

@@ -1,6 +1,6 @@
-let greet = () => "hello world!";
+let greets = () => "hello world!";
 
-console.log(greet())
+console.log(greets())
 
 
 
@@ -195,3 +195,129 @@ console.log(lovefunc(1,4))
     }
   }
 console.log(findAverage([1,2,3,4]))
+
+
+
+// function howMuchILoveYou(nbPetals) {
+    
+//   let arr = {
+//     1: "I love you",
+//     2: "a little",
+//     3: "a lot",
+//     4: "passionately",
+//     5: "madly",
+//     6: "not at all",
+//   };
+//  if (nbPetals == 7){ return arr[1]} else if( nbPetals == 8){return arr[2]}
+//  else{
+//   return arr[nbPetals]
+//  }
+
+
+
+
+// }
+
+
+
+// Who remembers back to their time in the schoolyard, when girls would take a flower and tear its petals, saying each of the following phrases each time a petal was torn:
+
+//     "I love you"
+//     "a little"
+//     "a lot"
+//     "passionately"
+//     "madly"
+//     "not at all"
+
+// If there are more than 6 petals, you start over with "I love you" for 7 petals, "a little" for 8 petals and so on.
+
+// When the last petal was torn there were cries of excitement, dreams, surging thoughts and emotions.
+
+// Your goal in this kata is to determine which phrase the girls would say at the last petal for a flower of a given number of petals. The number of petals is always greater than 0.
+
+
+// function howMuchILoveYou(nbPetals) {
+    
+//   let obj1 = {
+//     1: "I love you",
+//     2: "a little",
+//     3: "a lot",
+//     4: "passionately",
+//     5: "madly",
+//     6: "not at all",
+//   };
+  
+
+// let total = 0;
+//   if (arg > 6 ){
+    
+
+
+
+
+//     return obj1[total]
+//   } else return obj1[nbPetals]
+
+
+// }
+// console.log(howMuchILoveYou(10))
+
+
+// function testEven(n) {
+//   //Your awesome code here!
+// if (n < 0 || n % 2 !== 0) {return false} else return true
+// }
+// console.log(testEven(2))
+
+function sumStr(a,b) {
+
+
+
+}
+
+
+// console.log(sumStr("",2))
+
+
+
+  // function greet(language) {
+  //   let obj = {
+  //     english: "Welcome",
+  //     czech: "Vitejte",
+  //     danish: "Velkomst",
+  //     dutch: "Welkom",
+  //     estonian: "Tere tulemast",
+  //     finnish: "Tervetuloa",
+  //     flemish: "Welgekomen",
+  //     french: "Bienvenue",
+  //     german: "Willkommen",
+  //     irish: "Failte",
+  //     italian: "Benvenuto",
+  //     latvian: "Gaidits",
+  //     lithuanian: "Laukiamas",
+  //     polish: "Witamy",
+  //     spanish: "Bienvenido",
+  //     swedish: "Valkommen",
+  //     welsh: "Croeso",
+  //     Welcome: "IP_ADDRESS_INVALID",
+  //     Welcome: "IP_ADDRESS_NOT_FOUND",
+  //     Welcome: "IP_ADDRESS_REQUIRED",
+  //   };
+  //   for (language in obj) {
+  //     return obj[language];
+  //   }
+      
+  //   // return `${obj[language]}. Try again.`;
+  // }
+  // console.log(greet("Welkom"));
+
+function sums(a){
+ let sum = 0;
+ for (let i= 0; i< a.length; i++){
+  if(a[i] > 0){
+  sum += a[i]}  
+ }
+ return sum
+}
+console.log(sums([-1,-2,-3,-4,-5]))
+

@@ -313,11 +313,20 @@ function sumStr(a,b) {
 
 function sums(a){
  let sum = 0;
- for (let i= 0; i< a.length; i++){
+ for (let i= 0; i < a.length; i++){
   if(a[i] > 0){
   sum += a[i]}  
  }
  return sum
 }
-console.log(sums([-1,-2,-3,-4,-5]))
+console.log(sums([-1, 2,-3,-4,-5]))
+
+
+
+function findSmallestInt(args) {
+ let min = Math.min(...args)
+ return min
+}
+
+console.log(findSmallestInt([2,3,5]))
 

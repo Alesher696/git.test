@@ -311,22 +311,88 @@ function sumStr(a,b) {
   // }
   // console.log(greet("Welkom"));
 
-function sums(a){
- let sum = 0;
- for (let i= 0; i < a.length; i++){
-  if(a[i] > 0){
-  sum += a[i]}  
- }
- return sum
+// function sums(a){
+//  let sum = 0;
+//  for (let i= 0; i < a.length; i++){
+//   if(a[i] > 0){
+//   sum += a[i]}  
+//  }
+//  return sum
+// }
+// console.log(sums([-1, 2,-3,-4,-5]))
+
+
+
+// function findSmallestInt(args) {
+//  let min = Math.min(...args)
+//  return min
+// }
+
+// console.log(findSmallestInt([2,3,5]))
+let dept1 = [35467,	29842,	38501]
+let dept2 = [70533,	50121,	33899]
+
+let getAverage = (dept) =>{
+  let midles = 0;
+  for( let i=0 ; i < dept.length; i++){
+    midles += dept[i] / dept.length
+  }
+return midles
 }
-console.log(sums([-1, 2,-3,-4,-5]))
 
+console.log(getAverage(dept2))
 
+let getBonus = (a, b) => {
+  if (a > b) {
+    let c = a - b;
+    let p = (c / b) * 100;
+    if (p >= 30) {
+      return `The dept1 will get a bonus of ${parseInt(p)}%`;
+    } else return "No bonus";
+  } else if (b > a) {
+    let c = b - a;
+    let p = (c / b) * 100;
+    if (p >= 30) {
+      return `The dept2 will get a bonus of ${parseInt(p)}%`;
+    } else return "No bonus";
+  }
+};
 
-function findSmallestInt(args) {
- let min = Math.min(...args)
- return min
+console.log(getBonus(getAverage(dept1), getAverage(dept2)))
+
+// 34603
+//51517
+
+let testData = [11, 20, 47];
+let chai = new Array();
+let sum = new Array();
+
+let chaiFunc = (arr) =>{
+let precent = 0;
+chai = arr.map(function (el, i, arr) {
+  if (el >= 20) {
+    precent = (el / 100) * 15;
+    return el = precent;
+  } else {
+    precent = (el / 100) * 20;
+    return el = precent;
+  }
+});
+
+return chai
 }
 
-console.log(findSmallestInt([2,3,5]))
+console.log(chaiFunc(testData))
 
+
+
+
+
+function chaiSum(arr){
+sum = arr.map(function(el, i , arr){
+ return  el = el + chaiFunc(testData)[i]
+})
+return sum
+
+}
+console.log(chaiSum(testData))

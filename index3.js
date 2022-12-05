@@ -461,3 +461,16 @@ let sumIMT = ()=>{
 }
 
 console.log(sumIMT())
+
+
+function isPalindrome(x) {
+  let lowerCase = x.toLowerCase();
+  let testArr = lowerCase.split('').reverse().join("")
+
+if (lowerCase === testArr){
+  return true
+} else return false
+}
+
+
+console.log(isPalindrome("Abba"))

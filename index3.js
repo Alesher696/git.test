@@ -363,7 +363,7 @@ console.log(getBonus(getAverage(dept1), getAverage(dept2)))
 // 34603
 //51517
 
-let testData = [11, 20, 47];
+let testData = [31, 95, 276, 540, 27, 205, 11, 1180, 96, 57];
 let chai = new Array();
 let sum = new Array();
 
@@ -396,6 +396,21 @@ return sum
 
 }
 console.log(chaiSum(testData))
+
+function calculateAverage(arr) {
+  let summary = 0;
+  for (let i = 0; i < arr.length; i++) {
+    summary += arr[i];
+  }
+  return summary / arr.length;
+}
+
+console.log(calculateAverage(testData))
+
+
+
+
+
 
 //OBJECTS
 let driver = ()=> { 
@@ -474,3 +489,19 @@ if (lowerCase === testArr){
 
 
 console.log(isPalindrome("Abba"))
+
+let Arr12 = ['sdssd', 12, 14, "aaaa", 'fffff']
+let counters = (arr)=>{
+  let newArr12 = new Array()
+  for( let i = 0; i<arr.length; i++){
+    if (typeof arr[i] === "number") break;
+    newArr12 += arr[i]
+  }
+  return newArr12
+}
+console.log(counters(Arr12))
+
+
+let countNumber = Math.trunc(Math.random() * 6)
+console.log(countNumber)
+

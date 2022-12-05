@@ -505,3 +505,43 @@ console.log(counters(Arr12))
 let countNumber = Math.trunc(Math.random() * 6)
 console.log(countNumber)
 
+
+
+
+function factorialize(n) {
+return (n != 1) ? n * factorialize(n - 1) : 1;
+
+}
+
+console.log(factorialize(5));
+
+function findLongestWordLength(str) {
+  let newStr = str.split(" ");
+  let total = "";
+  for (let i = 0; i < newStr.length; i++) {
+    if (total.length < newStr[i].length) {
+      total = newStr[i];
+    }
+  }
+
+  return total;
+}
+
+
+
+function mutation(arr) {
+  var item1 = arr[0].toLowerCase();
+  var item2 = arr[1].toLowerCase();
+
+  for (var i = 0; i < item2.length; i++) {
+    var match = item1.indexOf(item2[i]);
+
+    if (match === -1) {
+      return false;
+    }
+  }
+
+  return true;
+}
+
+console.log(mutation(["hello", "hey"]));

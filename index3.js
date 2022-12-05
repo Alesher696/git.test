@@ -396,3 +396,68 @@ return sum
 
 }
 console.log(chaiSum(testData))
+
+//OBJECTS
+let driver = ()=> { 
+  if (objectData.driver == true){
+    return "Имеtтся водительское"
+  } else return "Водить не умеет"
+}
+
+
+
+let objectData = {
+  name: "Youra",
+  lastName: "Bublikov",
+  job: "svarshik",
+  familyMembers: ["Irina", "Petr", "Youra"],
+  driver: true,
+  ageYear: 1995,
+  calAge: function () {
+    return 2022 - this.ageYear;
+  },
+  summary: function () {
+    return `Это резюме нашего англичанина из Украины, как вы понимаете зовут претендента ${
+      this.name
+    } ${this.lastName},
+  ${this.ageYear} года рождения, то есть сейчас ему 
+  ${this.calAge()}. Работал более 20 лет на должности ${this.job}.
+  ${driver()}`;
+  },
+};
+
+
+console.log(`${objectData.name} has ${objectData.familyMembers.length} family members and the first one is ${objectData.familyMembers[0]}`)
+console.log(objectData.calAge(1995))
+
+console.log(objectData.summary())
+
+
+
+const objMike = {
+  name : 'Mike',
+  lastname : "Vasovsky",
+  weight : 40,
+  height : 150,
+  IMT : function(){
+    return (this.weight + this.height) ** 2
+  }
+}
+
+const objSali = {
+  name : 'Sali',
+  lastname : "Vangovery",
+  weight : 120,
+  height : 210,
+  IMT : function(){
+    return (this.weight + this.height) ** 2
+  }
+}
+
+let sumIMT = ()=>{
+  if (objMike.IMT > objSali.IMT)
+  {return " Майк поднабрал в массе"}
+  else return "Сали по прежнему мооooнстр"
+}
+
+console.log(sumIMT())

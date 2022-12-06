@@ -6,15 +6,27 @@ document.querySelector('.letsTry').textContent;
 console.log(document.querySelector('.letsTry').textContent);
 
 
+play.addEventListener("click", function () {
+  let a = windowEnter.value;
+  if (a > secretNumber) {
+    return (document.querySelector(".letsTry").textContent = "More!");
+  } else if(a < secretNumber) {return (document.querySelector(".letsTry").textContent = "Less!");
+} else if ( a == secretNumber) return (document.querySelector(".letsTry").textContent = "You Won!")
+});
 
-// function changeInfo(){
-// // let a = document.querySelector('.letsTry').textContent
-// // let b = document.querySelector('.score').textContent
-// // let c = document.querySelector('.trying').textContent
-// // let d = document.querySelector('windowEnter').value;
-// // if(d > secretNumber){
-// //     return document.querySelector('.letsTry').textContent = "More!"
-// // } else return document.querySelector('.letsTry').textContent = "Less!"
-// console.log(windowEnter.value);
-// }
+play.addEventListener("click", function () {
+let b = document.querySelector('#score');
+let c = parseInt(b.textContent);
+let d = c - 1
+return score.textContent = d
+})
 
+play.addEventListener("click", function () {
+    let a = windowEnter.value;
+    let b = score.textContent;
+    
+    if (a == secretNumber){
+        return trying.textContent = b
+    }
+
+})

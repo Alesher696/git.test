@@ -89,3 +89,10 @@ input[type="number"]:hover,
 input[type="number"]:focus {
     -moz-appearance: number-input;
 }
+
+#again{
+    width: 200px;
+    height: 30px;
+    margin-left: 250px;
+    font-family: Orbitron;
+}

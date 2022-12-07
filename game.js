@@ -56,3 +56,19 @@ play.addEventListener("click", function () {
     document.querySelector("#score").textContent = "";
   }
 });
+
+
+
+let playAgain = document.getElementById("again");
+playAgain.addEventListener('click', function(){
+  secretNumber = Math.floor(Math.random() * 20) + 1;
+  document.body.style.backgroundColor = "black";
+  let inp = document.getElementById("windowEnter");
+  inp.style.backgroundColor = "black";
+  let center = document.querySelector(".centerInfo");
+  center.textContent = "???";
+  document.querySelector(".letsTry").textContent = "Let's start!";
+  document.querySelector('#score').textContent = '20'
+
+
+})

@@ -545,3 +545,24 @@ function mutation(arr) {
 }
 
 console.log(mutation(["hello", "hey"]));
+
+
+
+function grow(x){
+  let sum = 0
+for( let i = 0 ; i < x.length ; i++){
+  sum += x[i]
+}
+  return sum
+}
+console.log(grow([4,1,1,1,1,4]));
+
+
+
+save.addEventListener('click', function(){
+let note = document.getElementById('notes').value;
+let newlist = document.createElement('li');
+newlist.append(document.createTextNode(note))
+ return first.append(newlist)
+
+})

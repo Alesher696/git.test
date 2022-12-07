@@ -1,4 +1,4 @@
-"Use strict"
+
 let secretNumber = Math.floor(Math.random()*20) + 1;
 
 document.querySelector('.letsTry').textContent;
@@ -30,3 +30,15 @@ play.addEventListener("click", function () {
     }
 
 })
+
+play.addEventListener("click", function () {
+  let a = windowEnter.value;
+  let center = document.querySelector('.centerInfo')
+if ( a == secretNumber){
+  center.textContent = "";
+   center.append(document.createTextNode(a))
+}
+
+})
+
+console.log(document.body.children[1].textContent);

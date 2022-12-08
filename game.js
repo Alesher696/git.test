@@ -1,8 +1,8 @@
 let secretNumber = Math.floor(Math.random() * 20) + 1;
 
-document.querySelector(".letsTry").textContent;
+// document.querySelector(".letsTry").textContent;
 
-console.log(document.querySelector(".letsTry").textContent);
+// console.log(document.querySelector(".letsTry").textContent);
 
 play.addEventListener("click", function () {
   let b = document.querySelector("#score");

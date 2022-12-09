@@ -28,4 +28,3 @@ function getError(elId){
 let Oncheck = document.getElementById('check');
 Oncheck.addEventListener('click',startError )
 
-

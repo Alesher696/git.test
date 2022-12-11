@@ -57,3 +57,22 @@ let firstVar = () => {
 };
 
 first.addEventListener("click", firstVar);
+
+
+function findDifference(a, b) {
+  //loading...
+  let s1 = 1
+  let s2 = 1
+  
+  for(let i = 0 ; i < 3; i++){
+s1 *= a[i]
+s2 *= b[i]
+  }
+  let total = s1 - s2
+  if (total < 0) {
+    return total *= -1 
+  }else return total
+ 
+}
+
+console.log(findDifference([7, 9, 21], [18, 14, 16]));

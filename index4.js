@@ -59,6 +59,17 @@ let firstVar = () => {
 first.addEventListener("click", firstVar);
 
 
+
+
+
+
+
+
+
+
+
+
+
 function findDifference(a, b) {
   //loading...
   let s1 = 1

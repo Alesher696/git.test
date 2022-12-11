@@ -1,20 +1,22 @@
-'use strict'
+"use strict";
 
+let modul = document.getElementById("modul1");
+let closeSecretModul = document.getElementById("closeSecretModul");
 
-let modul = document.getElementById('modul1')
+function ShowModul() {
+  let secretModul = document.getElementById("secretModul");
+  secretModul.style.display = "block";
+}
 
+function CloseModul() {
+  secretModul.style.display = "none";
+}
 
-modul.addEventListener('click', ()=>{
+modul.addEventListener("click", ShowModul);
+closeSecretModul.addEventListener("click", CloseModul);
 
-
-let secretModul = document.getElementById("secretModul")
-secretModul.style.display = "block"
-
-let closeModul = document.getElementById('closeSecretModul')
-closeModul.addEventListener('click', ()=>{
-
-    secretModul.style.display = "none"
-})
-
-
-})
+document.addEventListener("keydown", (e) => {
+  if (e.key === "Escape") {
+    CloseModul();
+  } else console.log("Not escape");
+});

@@ -77,4 +77,49 @@ function maps(x){
       
       console.log(titleCase("I'm a little tea pot"))
 
+
+
+      const users = {
+        Alan: {
+          online: false
+        },
+        Jeff: {
+          online: true
+        },
+        Sarah: {
+          online: false
+        }
+      }
       
+      function countOnline(usersObj) {
+        // Only change code below this line
+        let i = 0;
+        for (let user in usersObj) {
+          if (usersObj[user].online == true) {
+            i++;
+          }
+        }
+        return i;
+        // Only change code above this line
+      }
+      console.log(countOnline(users));
+      
+
+      const person = {
+        name: ['Bob', 'Smith'],
+        age: 32,
+        gender: 'male',
+        interests: ['music', 'skiing'],
+        bio: function() {
+          alert(this.name[0] + ' ' + this.name[1] + ' is ' + this.age + ' years old. He likes ' + this.interests[0] + ' and ' + this.interests[1] + '.');
+        },
+        greeting: function() {
+          alert('Hi! I\'m ' + this.name[0] + '.');
+        }
+      };
+    
+      let myDataName = 'height';
+      let myDataValue = '1.75m';
+      person[myDataName] = myDataValue;
+      
+    console.log(person);

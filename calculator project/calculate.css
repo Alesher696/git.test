@@ -1,0 +1,18 @@
+body{
+    background-color: darkgrey;
+}
+#numbers{
+    border: 2px solid black;
+    padding: 10px;
+    margin: 150px;
+    width: 165px;
+    border-radius: 5px;
+    background-color: azure;
+}
+
+button{
+    padding: 20px;
+    background-color: black;
+    color: white;
+    border-radius: 10px;
+}

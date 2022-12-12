@@ -33,11 +33,46 @@ function maps(x){
 
 
 
-      function removeUrlAnchor(url) {
-        let arr = url.split("");
-        if  (arr.indexOf("#") == -1){
-            return url
-        } else return url.slice(0, arr.indexOf("#"))
-        // return url.slice(0, arr.indexOf("#"));
+      // function removeUrlAnchor(url) {
+      //   let arr = url.split("");
+      //   if  (arr.indexOf("#") == -1){
+      //       return url
+      //   } else return url.slice(0, arr.indexOf("#"))
+      //   // return url.slice(0, arr.indexOf("#"));
+      // }
+      // console.log(removeUrlAnchor("www.codewars.com/katas/"));
+
+
+
+      // function repeatStringNumTimes(str, num) {
+      //   let newstr = ""
+      //   for( let i = 0; i < num; i++ ){
+      //     newstr += str
+
+      //   }
+
+      //   return newstr
+      // }
+      
+     
+      // console.log(repeatStringNumTimes("abc", -2));
+
+
+
+      // function truncateString(str, num){
+  
+      //   return `${str.slice(0, num)}...`;
+      // }
+      // console.log(truncateString("A-tisket a-tasket A green and yellow basket", 8))
+     
+
+      function titleCase(str) {
+        let lower = str.toLowerCase();
+        let arr = lower.split(" ");
+        let newarr = arr.map((el) =>
+          el.replace(el.charAt(0), el.charAt(0).toUpperCase())
+        );
+        return newarr.join(' ');
       }
-      console.log(removeUrlAnchor("www.codewars.com/katas/"));
+      
+      console.log(titleCase("I'm a little tea pot"))

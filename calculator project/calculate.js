@@ -37,4 +37,3 @@ function numberOne(){
 //         return this.a / this.b
 //     }
 // }
-//Пытаюсь комитить

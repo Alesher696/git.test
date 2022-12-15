@@ -123,3 +123,12 @@ function maps(x){
       person[myDataName] = myDataValue;
       
     console.log(person);
+
+
+    function animal(obj){
+      return `This ${obj.color} ${obj.name} ${obj.legs} has legs.`
+    }
+    
+console.log(animal({name:"dog",legs:4,color:"white"}));
+
+

@@ -1,18 +1,61 @@
-body{
-    background-color: darkgrey;
+.signs {
+    background-color: black;
+    font-size: 24px;
+    width: 200px;
+    text-align: center;
+    color: white;
 }
-#numbers{
-    border: 2px solid black;
-    padding: 10px;
-    margin: 150px;
-    width: 165px;
-    border-radius: 5px;
-    background-color: azure;
+body{
+    background-color: white;
 }
 
-button{
-    padding: 20px;
+.numbers{
+    background-color: black;
+    border-radius: 15px;
+    text-align: center;
+    display: inline-block;
+    width: 200px;
+    
+}
+.btn{
+    display: inline-block;
+    font-size: 34px;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    margin: 2px;
+    border: 1px solid rgb(24, 24, 24);
+    border-radius: 100%;
+    color: white;
+    background-color: rgb(24, 24, 24);
+    
+}
+.zero{
+    width: 100px;
+    border-radius: 40px;
+    
+}
+.data{
+    width: 200px;
+    height: 50px;
+    border: 0;
+    padding: 0;
+    border-radius: 15px;
     background-color: black;
     color: white;
-    border-radius: 10px;
+    text-align: end;
+    font-size: 32px;
+
+}
+
+.btn:hover{
+    background-color: rgb(46, 46, 46);
+    border: 1px solid rgb(46, 46, 46);
+}
+
+.calculator{
+    border-radius: 15px;
+    border: 2px solid black;
+    display: inline-block;
+    background-color: black;
 }

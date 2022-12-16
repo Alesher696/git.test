@@ -1,39 +1,30 @@
-let indicatePanel = document.getElementById('data');
-let clearButton = document.getElementById('clear')
-let element = document.getElementById('one')
+let ind1 = '';
+let ind2 = '';
+let sign = '';
 
 
-
-element.addEventListener('click',numberOne)
-clearButton.addEventListener('click', clearData)
-
-
-function clearData(){
-return indicatePanel.value = '';
-}
-function numberOne(){
-  return indicatePanel.value += element.value 
-}
+let num = ['1','2','3','4','5','6','7','8','9','0'];
+let operands = ['X','+','-','/']
 
 
+let data = document.querySelector('#data');
+let clear = document.querySelector('#clear')
+clear.addEventListener('click', ()=>{
+  data.textContent = 0
+})
 
 
+let buttons = document.querySelector('#buttons')
 
-// Операции с числами
+buttons.addEventListener('click', function(event){
+  if(!event.target.classList.contains('btn')) return;
+  if(event.target.classList.contains('ac')) return;
+  data.textContent ='';
 
-// let operates = {
+  const key = event.target.textContent
+  if(num.includes(key)){
+    ind1 += key;
+    data.textContent = ind1;
+  }
+})
 
-//     sum: function(){
-//         return this.a + this.b
-//     },
-//     mul: function(){
-//         return this.a * this.b
-//     },
-//     minus: function(){
-//         return this.a - this.b
-//     },
-
-//     del: function(){
-//         return this.a / this.b
-//     }
-// }

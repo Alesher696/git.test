@@ -1,13 +1,161 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<link href="cssCourse.css" rel="stylesheet"/>
+<link href="cssCourse.css" rel="stylesheet" />
+
 <body>
-    
+    <div class="page">
+        <div class="header">
+            <div class="image">
+                <img src="data:image/jpeg;base64,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">
+            </div>
+        </div>
+        <div class="section">
+            <div class="nav-panel">
+                <nav>
+                    <ul>
+                        <li>Main</li>
+                        <li>Second</li>
+                    </ul>
+                </nav>
+                <nav>
+                    <ul>
+                        <li>Main2</li>
+                        <li>Second2</li>
+                        <input class="search" type="text" placeholder="Search">
+                    </ul>
+
+                </nav>
+            </div>
+            <div class="text">
+                <h1>HTML</h1>
+                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                    born and I
+                    will give you a complete account of the system, and expound the actual teachings of the great
+                    explorer of
+                    the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
+                    itself,
+                    because it is pleasure, but because those who do not know how to pursue pleasure rationally
+                    encounter
+                    consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires
+                    to obtain
+                    pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
+                    pain can
+                    procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                    physical
+                    exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+                    who
+                    chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                    produces no
+                    resultant pleasure?"</p>
+                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                        born and I
+                        will give you a complete account of the system, and expound the actual teachings of the great
+                        explorer of
+                        the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
+                        itself,
+                        because it is pleasure, but because those who do not know how to pursue pleasure rationally
+                        encounter
+                        consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires
+                        to obtain
+                        pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
+                        pain can
+                        procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                        physical
+                        exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+                        who
+                        chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                        produces no
+                        resultant pleasure?"</p>
+                        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                            born and I
+                            will give you a complete account of the system, and expound the actual teachings of the great
+                            explorer of
+                            the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
+                            itself,
+                            because it is pleasure, but because those who do not know how to pursue pleasure rationally
+                            encounter
+                            consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires
+                            to obtain
+                            pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
+                            pain can
+                            procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                            physical
+                            exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+                            who
+                            chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                            produces no
+                            resultant pleasure?"</p>
+                            <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                                born and I
+                                will give you a complete account of the system, and expound the actual teachings of the great
+                                explorer of
+                                the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
+                                itself,
+                                because it is pleasure, but because those who do not know how to pursue pleasure rationally
+                                encounter
+                                consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires
+                                to obtain
+                                pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
+                                pain can
+                                procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                                physical
+                                exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+                                who
+                                chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                                produces no
+                                resultant pleasure?"</p>
+                                <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                                    born and I
+                                    will give you a complete account of the system, and expound the actual teachings of the great
+                                    explorer of
+                                    the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
+                                    itself,
+                                    because it is pleasure, but because those who do not know how to pursue pleasure rationally
+                                    encounter
+                                    consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires
+                                    to obtain
+                                    pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
+                                    pain can
+                                    procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                                    physical
+                                    exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+                                    who
+                                    chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                                    produces no
+                                    resultant pleasure?"</p>
+                                    <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was
+                                        born and I
+                                        will give you a complete account of the system, and expound the actual teachings of the great
+                                        explorer of
+                                        the truth, the master-builder of human happiness. No one rejects, dislikes, or avoids pleasure
+                                        itself,
+                                        because it is pleasure, but because those who do not know how to pursue pleasure rationally
+                                        encounter
+                                        consequences that are extremely painful. Nor again is there anyone who loves or pursues or desires
+                                        to obtain
+                                        pain of itself, because it is pain, but because occasionally circumstances occur in which toil and
+                                        pain can
+                                        procure him some great pleasure. To take a trivial example, which of us ever undertakes laborious
+                                        physical
+                                        exercise, except to obtain some advantage from it? But who has any right to find fault with a man
+                                        who
+                                        chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that
+                                        produces no
+                                        resultant pleasure?"</p>
+            </div>
+        </div>
+    </div>
+
+
+
+
 </body>
+
 </html>

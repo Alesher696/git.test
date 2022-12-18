@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background-image: url(image1.png );
+    background-attachment: fixed;
 }
 
 .nav-panel{
@@ -37,6 +38,7 @@ body{
 .header{
     width: 20%;
     background-color: #1B2435;
+    border-right: 2px solid black;
     
 }
 .section{

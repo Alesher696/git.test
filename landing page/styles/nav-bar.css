@@ -33,10 +33,11 @@
 }
 
 .drop{
-    display: block;
+    display: none;
     grid-column: 3/6;
     grid-row: 2;
-    background-color: rgba(0, 0, 0, 0.678); 
+    background-color: rgba(0, 0, 0, 0.678);
+    z-index: 3;
 
 }
 

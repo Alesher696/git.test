@@ -1,0 +1,28 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.first{
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    height: 500px;
+    background-color: rgba(109, 189, 189, 0.342);
+    align-items: center;
+}
+.nav{
+    position: fixed;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+}
+
+.nav a{
+    position: relative;
+    color: white;
+    text-decoration: none;
+    font-size: 2em;
+    padding:25px;
+}

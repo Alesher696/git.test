@@ -1,0 +1,54 @@
+.flight-info{
+    margin: 0px auto;
+    background-color: rgba(170, 193, 255, 0.096);
+
+    padding: 2em;
+    text-align: center;
+}
+
+.flight-info-inner{
+  width: 800px;
+  margin: 0px auto;
+  margin-top: 4em;
+  margin-bottom: 2em;
+  text-align: start;
+}
+.flight-info{
+    display: grid;
+    grid-template-rows: 40% 60%;
+    justify-items: center;
+}
+
+.firstGridEl , .secondGridEl{
+    display: flex;
+    margin: 3em;
+    margin-inline-start: 0em;
+    
+}
+
+.El{
+    width: 280px;
+    border-bottom: 1px solid rgba(161, 161, 161, 0.425);
+    text-align: start;
+    margin-inline: 0em;
+    padding-bottom: 1em;
+    margin-right: 1em;
+    
+}
+
+.El .fo{
+    font-size: 1.5em;
+    
+}
+
+.foo{
+    font-size: 0.8em;
+    margin-bottom: 1em;
+    margin-inline: 0em;
+}
+.fooo{
+    color: rgb(190, 214, 0);
+}
+.p{
+    font-size: 2em;
+}

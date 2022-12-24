@@ -1,0 +1,72 @@
+.promotion{
+    margin: 0 auto;
+    width: 800px;
+
+}
+
+.name-promotion{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 2em;
+}
+
+.promo{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.promo1 , .promo2 , .promo3{
+    width: 250px;
+    height: 280px;
+    border: 1px solid black;
+    border-radius: 30px;
+
+}
+
+
+.promo-img{
+    width: 100%;
+    height: 30%;
+   
+}
+
+.promo-img img{
+    width: 100%;   
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px; 
+}
+
+
+
+    
+
+.special{
+    margin: 0 auto;
+    width: 800px;
+    margin-bottom: 2em;
+
+}
+.special-name{
+    display: flex;
+    justify-content: flex-start;
+    margin-bottom: 2em;
+}
+.special-item{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-bottom: 1em;
+}
+
+.spec-item-1{
+    width: 150px;
+    border: 1px solid black;
+}   
+
+
+.spec-img{
+    display: flex;
+    
+}
+

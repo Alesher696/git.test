@@ -10,11 +10,13 @@
 
 .navbar {
     width: 2000px;
-    background-color: rgba(255, 255, 255, 0.767);
+    background-color: rgb(255, 255, 255);
     height: 8em;
     display: flex;
     margin: 0 auto;
-
+position: relative;
+z-index: 300;
+border-bottom: 0.5px solid rgba(194, 194, 194, 0.747);
 
 
 }
@@ -113,8 +115,8 @@ a {
 .footer{
     margin: 0px auto;
     width: 2000px;
-    height: 500px;
-    background-color: rgb(104, 104, 104);
+    height: 250px;
+    background-color: rgba(201, 201, 201, 0.507);
     text-align: center;
 }
 
@@ -140,3 +142,18 @@ box-shadow: 0px -2px 16px 4px rgba(34, 60, 80, 0.2);
 }
 
 
+.content {
+    padding: 16px;
+  }
+  
+
+  .sticky {
+    position: fixed;
+    top: 0;
+    width: 100%
+  }
+  
+
+  .sticky + .content {
+    padding-top: 102px;
+  }

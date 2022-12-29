@@ -1,0 +1,40 @@
+#modul1{
+    color: white;
+    background-color: black;
+width: 200px;
+height: 60px;
+border-radius: 15px;
+font-size: 24px;
+text-align: center;
+font-family: Arial, Helvetica, sans-serif;
+margin-top: 10px;
+margin-inline-start: 800px;
+}
+
+#secretModul{
+    
+    border: solid white;
+    border-radius: 15px;
+    display: none;
+    width: 500px;
+    text-align: center;
+   
+    
+    
+
+}
+
+#closeSecretModul{
+
+margin-top: 10px;
+    margin-left: 460px;
+    border-radius: 10px;
+    
+}
+p, h1{
+color: white;
+}
+
+body{
+    background-color:  black;
+}
